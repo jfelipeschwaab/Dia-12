@@ -9,7 +9,7 @@ interface BouquetProps {
 export default function Bouquet({ isStarted }: BouquetProps) {
   // Generate a collection of lilies in a structured florist arrangement
   const lilies = useMemo(() => {
-    const items = [];
+    const items: any[] = [];
     const dummy = new THREE.Object3D();
     
     // Convergence point for the stems (the bottom of the bouquet wrap)
